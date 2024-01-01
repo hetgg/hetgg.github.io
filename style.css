@@ -1,0 +1,638 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+*::selection{
+    background-color: #ffaa17;
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.contanier{
+    width: 85%;
+    margin: auto;
+}
+.btn{
+    padding: 15px 30px;
+    color: #1c1e22;
+    font-weight: 500;
+    background-color: #ffaa17;
+    border-radius: 10px;
+    border: 1px solid #ffaa17;
+}
+.btn:hover{
+    color: #ffaa17;
+    background: #fff;
+}
+
+section{
+    padding: 90px 0 40px;
+}
+
+.sec-top{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.sec-top h1{
+    color: #1c1e22;
+    font-size: 40px;
+}
+.sec-top h1 span{
+    color: #ffaa17;
+}
+
+.boxs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.boxs .box{
+    width: 30%;
+}
+/* start Header */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 15px 20px;
+
+}
+.logo {
+    max-height: 80px; /* Adjust the max height as needed */
+}
+header.active{
+    background-color: #1c1e22;
+    border-bottom: 1px solid #8888884a;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+header nav .nav-links a{
+    color: #fff;
+    margin-left: 50px;
+}
+header nav .nav-links a:hover,
+header nav .nav-links a.active{
+    color: #ffaa17;
+}
+
+#btn-menu{
+    display: none;
+}
+
+/* start Hero */
+
+.hero .hero-img img,
+.project img {
+    max-width: 100%; /* Ensure the image scales down to fit its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: block; /* Remove any extra spacing added by inline elements */
+    margin: 0 auto; /* Center the image within its container */
+    border-radius: 10px; /* Add border-radius for rounded corners if desired */
+}
+
+/* Center images within the project box */
+.project1 .box,
+.project2 .box,
+.project3 .box,
+.project4 .box {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the "Landing Page" text */
+.project1 .box-hover span,
+.project2 .box-hover span,
+.project3 .box-hover span,
+.project4 .box-hover span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Adjust the width of the boxes */
+.boxs .box {
+    width: calc(30% - 20px);
+    margin-bottom: 40px;
+}
+
+/* Add margin between the boxes */
+.boxs .box:not(:last-child) { 
+    margin-right: 20px;
+}
+
+/* Add a wrapper for the text and links */
+.project1 .text-wrapper,
+.project2 .text-wrapper,
+.project3 .text-wrapper,
+.project4 .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+/* Style for the paragraph and link */
+.project1 .text-wrapper p,
+.project2 .text-wrapper p,
+.project3 .text-wrapper p,
+.project4 .text-wrapper p,
+.project1 .text-wrapper a,
+.project2 .text-wrapper a,
+.project3 .text-wrapper a,
+.project4 .text-wrapper a {
+    margin: 5px 0;
+}
+
+
+/* CSS for Image Carousel */
+
+.carousel-container {
+    position: relative;
+    max-width: 100%; /* Adjust the maximum width as needed */
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%; /* Each image takes up 50% of the container width */
+    height: auto;
+    object-fit: contain;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    padding: 10px;
+    z-index: 1;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+
+.hero{
+    padding-top: 80px;
+    background: url(img/cover.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero .contanier{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero .content h4{
+    color: #ffaa17;
+    font-size: 30px;
+}
+.hero .content h1{
+    color: #fff279;
+    font-size: 65px;
+    margin: 20px 0 10px;
+    /* margin: 20px 0 80px; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value for the level of transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    z-index: 1; /* Ensure text appears above the overlay */
+    color: #fff; /* Set text color to white or a contrasting color */
+    /* Add any additional styles for your main content */
+  }
+
+.hero .content p{
+    color: #e4e4e4;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+.hero .content .btn{
+    font-size: 18px;
+}
+.hero .hero-img img{
+    width: 450px;
+}
+ /* start about */ 
+
+ .about {
+    padding: 90px 0 50px;
+ }
+.about .contanier{
+    display: flex;
+    justify-content: center;
+}
+.about .about-img img{
+    width: 450px;
+    border-radius: 10px;
+}
+.about .content{
+    margin-left: 30px;
+}
+.about .content h1{
+    color: #1c1e22;
+    font-size: 45px;
+}
+.about .content h1 span{
+    color: #ffaa17;
+}
+.about .content h3{
+    color: #1c1e22;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.about .content p{
+    color: #444;
+    line-height: 1.8;
+    margin-bottom:70px;
+}
+
+
+
+/* start Services */
+
+.services{
+    background-color: #f0f4f9;
+    text-align: center;
+}
+.services .boxs .box{
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px 0px rgba(128, 112, 22, 0.2);
+    position: relative;
+    top: 0;
+}
+.services .boxs .box:hover{
+    top: -25px;
+}
+.services .boxs .box i{
+    color: #ffaa17;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.services .boxs .box h3{
+    color: #1c1e22;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.services .boxs .box p{
+    color: #444;
+    margin-bottom: 50px;
+}
+/* start Portfolio */
+.portfolio .boxs .box{
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .boxs .box img{
+    width: 100%;
+    height: 100%;
+}
+.portfolio .boxs .box:hover img{
+    transform: scale(1.2);
+    rotate: -4deg;
+    transition: 0.6s ease-out;
+}
+.portfolio .boxs .box .box-hover{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #111111b9;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    opacity: 0;
+}
+.portfolio .boxs .box:hover .box-hover{
+    opacity: 1;
+}
+.portfolio .boxs .box .box-hover span{
+    color: #fff;
+    font-size: 25px;
+}
+
+/* start Contact */
+
+.contact{
+    background: #f0f4f9;
+}
+.contact form{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact form input{
+    width: 48%;
+    font-size: 18px;
+    padding: 15px 10px;
+    outline: none;
+    border: 1px solid rgba(128, 112, 22, 0.3);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.contact form textarea{
+    border: 1px solid rgba(128, 112, 22, 0.3);
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+.contact form textarea:focus,
+.contact form input:focus{
+    border-color: #ffaa17;
+}
+.contact form button{
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+
+/*Start Footer*/
+footer {
+    background-color: #1c1e22;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.social-icons {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.contact-info h3,
+.social-icons h3 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 8px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 5px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+/* Media */
+/* Existing CSS code remains unchanged */
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .contanier {
+        width: 90%;
+    }
+    .hero .content h1 {
+        font-size: 50px;
+    }
+    .hero .content p {
+        font-size: 25px;
+    }
+    .hero .hero-img img {
+        width: 380px;
+    }
+    .hero {
+        padding-bottom: 40px;
+    }
+    .about .content h3 {
+        font-size: 20px;
+    }
+    .about .content p {
+        margin-bottom: 50px;
+    }
+    .about .about-img img {
+        width: 380px;
+    }
+    .services .boxs .box h3 {
+        font-size: 22px;
+    }
+    .contact form {
+        width: 70%;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero .content h1 {
+        font-size: 40px;
+    }
+    .hero .content p {
+        font-size: 22px;
+    }
+    .hero .hero-img img {
+        width: 340px;
+    }
+    header nav .nav-links a {
+        margin-left: 40px;
+    }
+    .about .contanier {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .about-img img {
+        width: 340px;
+    }
+    .about .about-img {
+        margin-bottom: 40px;
+    }
+    .boxs .box {
+        width: 45%;
+        margin-bottom: 40px;
+    }
+    .contact form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 780px) {
+    .hero .contanier {
+        flex-direction: column-reverse;
+    }
+    .hero .hero-img img {
+        width: 380px;
+    }
+    .hero .content h1 {
+        font-size: 50px;
+    }
+    .hero .content {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .btn {
+        padding: 12px 25px;
+    }
+    #btn-menu {
+        display: block;
+        color: #fff;
+        font-size: 40px;
+    }
+    header nav .nav-links {
+        position: absolute;
+        top: -350px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #1c1e22;
+    }
+    header nav .nav-links.active {
+        top: 100%;
+    }
+    header nav .nav-links a {
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        border-bottom: 1px solid #444;
+    }
+    header nav .nav-links a.active,
+    header nav .nav-links a:hover {
+        background-color: #ffaa17;
+        color: #1c1e22;
+    }
+}
+
+@media (max-width: 670px) {
+    .hero .hero-img img {
+        width: 100%;
+        border: 2px solid #ffaa17;
+    }
+    .carousel img {
+        width: 100%; /* Ensure images scale down on smaller screens */
+        height: auto;
+    }
+    .carousel-container {
+        overflow: hidden; /* Ensure images are properly clipped within the container */
+    }
+    .project1 img,
+    .project2 img,
+    .project4 img {
+        max-width: 100%; /* Ensure images scale down on smaller screens */
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        border-radius: 10px; /* Add border-radius for rounded corners if desired */
+    }
+    .project3 img { 
+    max-width: 50%; /* Reduce the size by half for mobile view */
+    height: auto;
+    border-radius: 10px; /* Add border-radius for rounded corners if desired */
+    }
+    .boxs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .boxs .box {
+        width: 90%; /* Adjust the width of the boxes for better responsiveness */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .contact form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .project1 img,
+    .project2 img,
+    .project4 img {
+        max-width: 100%; /* Ensure images scale down on smaller screens */
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        border-radius: 10px; /* Add border-radius for rounded corners if desired */
+    }
+    .project3 img {
+        max-width: 50%; /* Reduce the size by half for mobile view */
+        height: auto;
+        border-radius: 10px; /* Add border-radius for rounded corners if desired */
+    }
+    .hero .hero-img img {
+        width: 100%;
+        border: 2px solid #ffaa17;
+    }
+    .boxs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .boxs .box {
+        width: 100%; /* Display boxes as full width on smaller screens */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .contact form {
+        width: 90%;
+    }
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Het Patel - Embedded Systems</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- link file css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="contanier">
+            <img class="logo" src="img/logo1.png" >
+            <i id="btn-menu" class="fa-solid fa-bars"></i>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#Portfolio">Portfolio</a>
+                <a href="#Footer-content">Contact</a>
+            </div>
+        </nav>
+    </header>
+<!-- start home sec -->
+    <div class="hero" id="home">
+        <div class="overlay">
+        <div class="contanier">
+            <div class="main-content">
+            <div class="content">
+                <!-- <h4>Hello, I'm</h4> -->
+                <h1>Het Patel</h1>
+                <p>Embedded Firmware Enthusiast</p>
+                <a href="Het Patel_Resume.pdf" class="btn">Download Resume</a>
+            </div>
+
+            <!-- <div class="hero-img">
+                <img src="img/hero.png" >
+            </div> -->
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- start about sec -->
+
+    <section id="about" class="about">
+        <div class="contanier">
+            <div class="about-img">
+                <img src="img/HP_Headshot.jpg" >
+            </div>
+            <div class="content">
+                <h1>About Me 
+                    <!-- <span>Me</span> -->
+                </h1>
+                <!-- <h3>Embedded Systems</h3> -->
+                <br><br>
+                <p> 
+                    Het Patel, a dedicated professional with a sound interest in embedded systems. I bring a wealth of technical knowledge and hands-on experience to the table.
+                    I have woked on series of captivating projects while implementing latest firmware functionalities that showcase my proficiency in designing innovative solutions. I am deeply passionate about staying at the forefront of technology, ensuring that I am well-versed in the latest advancements, both in software and hardware.
+                    I thrive on automating tasks, streamlining processes, and finding elegant solutions to intricate problems. <br>
+                    As a professional with a deep-seated commitment to the field, I look forward to leveraging my skills and knowledge to contribute meaningfully to projects that push the boundaries of what's possible in the field.
+                </p>
+                     <div class="btns">
+                        <!-- <a href="#" class="btn">Download CV</a> -->
+                        <a href="#Footer-content" class="btn">Get in touch</a>
+                     </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- start Portfolio -->
+
+
+    <section id="Portfolio" class="portfolio">
+        <div class="contanier">
+            <div class="sec-top">
+                <h1>My <span>Projects</span></h1>
+            </div>
+    
+            <!-- Project 1 -->
+            <div class="project1">
+                <h3>End to End IoT System (C/C++)</h3>
+                <br>
+                <h2>⸻</h2>
+                <p> The purpose of this project is to determine the duration of the light in the closed
+                    room. The automatic switches which turn on and off in a
+                    certain amount of time. This project goes a little more in depth in terms of the measurement
+                    of amount of light turned on in the room.
+                    </p>
+                    <p>
+                        This project was a part of a class, Internet of Things at Sonoma State University in 2022. 
+                    </p> <br>
+                <a href="endtoend.pdf">
+                        <span>Read More</span>
+                        </a> <br> <br> 
+                <div class="image-container">      
+                    <img src="img/endtoend.png">
+                </div>
+            </div>  
+    
+            <!-- Project 2 -->
+            <div class="project2">
+                <br><br> 
+                <h3>Home Automation System (C, PIC18F46K20 MCU, MPLab)</h3>
+                <br>
+                <h2>⸻</h2>
+                <p>The project explains the fundamental of how all the new home automation systems has been made. 
+                    This prototype is a great intital example to remotely operate devices. This utilizes the on borad
+                    HC05 bluetooth module for wireless serial communications. It will send serial data to android application
+                    which will respond back with toggling home peripherals. 
+                    <br> <br>Android app was programmed to have four different buttons to operate the peipherals. Each button would have ON and OFF capability.
+                </p> <br>
+                
+                    <a href="projects.html">
+                        <span>Read More</span><br><br><br><br>
+                        </a>
+                <div class="image-container">  
+                    <img src="img/project7.png">
+                    <img src="img/project8.png"><br>
+                    <br>
+                </div>
+            </div>
+    
+            <!-- Project 3 -->
+            <div class="project3">
+                <h3>Robotics Project</h3>
+                <br>
+                <h2>⸻</h2>
+                <p>The project demonstrates a design and working model of RRR (three revolute joint) robotic arm which has 3 degrees of freedom. 
+                    The arm consists of three rotary joints which are controlled by three servo motors. 
+                    These servo motors are responsible for the movement of the arm. These robotic arms can be used in a variety of applications, including manufacturing, assembly, and research. 
+                    
+                   <br> <br> The goal of this project is to implement the Forward and Inverse Kinematics using equations, translating those equations in the language which the microcontroller can understand and uploading the code to the microcontroller. 
+                    This project walk you through the step by step process of building and designing the arm
+                </p> <br>
+                <a href="ECE573 Report.pdf">
+                        <span>Read More</span>
+                        </a> <br> <br>
+                <div class="image-container">    
+                    <img src="img/Project9.png">
+                </div>
+            </div>
+            
+             <!-- Project 4 -->
+             <div class="project4"><br><br>
+                <h3>Breath Data Collection Device</h3>
+                <br>
+                <h2>⸻</h2>
+                <p>The objective of this project is to develop a wireless automatic data logging device for breath based medical research. 
+                    By utilizing an ESP32 microcontroller unit (MCU) with FreeRTOS operating system and a Notecarrier AF for cellular communication, the project aims to create a robust and reliable platform for remote breath data collection. 
+                    The purpose is to provide an efficient solution that overcomes the limitations of previous iteration which utilized 3G protocol which has been phased out, having poor connectivity and is not usable anymore.</p>
+                <a href="projects.html">
+                        <span>Read More</span><br><br>
+                        </a>
+                <div class="image-container">
+                    <img src="img/Project10.png">
+                    <img src="img/Project11.png">
+                    
+                </div>
+    
+            <!-- Add more projects as needed -->
+    
+        </div>
+    </section>
+                    </div>
+    </section>
+
+
+    <!-- start Contact -->
+
+    <section id="Contact" class="contact">
+        <div class="contanier">
+            <div class="sec-top">
+                <h1>Extracurricular and Achievements<span></span></h1>
+            </div>
+    
+            <div class="content">
+                <p>Over the years, I have had the incredible pleasure to take part in some truly amazing events.
+                    I am a memebr of the Intelligent Systems Laboratory (ISL) since I started my Master's degree. The main goal of ISL is to advance research and training in sensors, embedded systems, and sensor data analysis areas at Sonoma State.
+                    <br> In the year 2023, I've had a chance to attend events like Tech Expos and Research competitions.  
+                </p> <br>
+            </div>
+
+            <div class="carousel-container">
+                <button class="carousel-button prev" onclick="prevSlide()">❮</button>
+                <div class="carousel">
+                    <img src="img/Expo_3.jpg" alt="Description of Image 1">
+                    <img src="img/CSU_research.jfif" alt="Description of Image 2">
+                    <img src="img/isl_logo.jpg" alt="Description of Image 2">
+                    <img src="img/Expo_4.jpg" alt="Description of Image 2">
+                    <!-- Add more images as needed -->
+                </div>
+                <button class="carousel-button next" onclick="nextSlide()">❯</button>
+            </div>
+        </div>
+    </section>  
+
+    <!--- strat footer -->
+
+    <footer>
+        <section id="Footer-content">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Me</h3>
+                <p>Email: <a href="mailto:hetpatel1599j@gmail.com">hetpatel1599j@gmail.com</a></p>
+                <p>Phone: +1(669)388-1311</p>
+            </div>
+            <div class="social-icons">
+                <h3>Connect With Me</h3>
+                <a href="https://www.linkedin.com/in/het-patel-87b66620b/" target="_blank">
+                    <img src="img/linkedin-logo.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.github.com/hetgg" target="_blank">
+                    <img src="img/github-logo.png" alt="GitHub">
+                </a>
+                <!-- Add more social icons as needed -->
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Het Patel. All Rights Reserved.</p>
+        </div>
+    </section>
+    </footer>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
